@@ -11,11 +11,11 @@
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
  * a hard dependency and makes colored fonts and emojis possible.
  */
-static char *font = "Hack:weight=bold:pixelsize=19:antialias=true:hinting=true";
+static char *font = "Hack:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { 
-    "JoyPixels:pixelsize=19:antialias=true:autohint=true",
+    "JoyPixels:pixelsize=14:antialias=true:autohint=true",
 };
-static int borderpx = 3;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -103,30 +103,30 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.65;
+float alpha = 0.5;
 
 /* Terminal colors (16 first used in escape sequence) */
 /* Colorscheme based on the 'Doom One' theme from Doom Emacs */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1c101f",
-	"#8e3865",
-	"#8a6179",
-	"#788b7e",
-	"#765787",
-	"#9d718f",
-	"#c86797",
-	"#e9c9ca",
+	"#1c1f24",
+	"#ff6c6b",
+	"#98be65",
+	"#da8548",
+	"#51afef",
+	"#c678dd",
+	"#5699af",
+	"#202328",
 
 	/* 8 bright colors */
-	"#1c101f",
-        "#8e3865",
-        "#8a6179",
-        "#788b7e",
-        "#765787",
-        "#9d718f",
-        "#c86797",
-        "#e9c9ca",
+	"#5b6268",
+	"#da8548",
+	"#4db5bd",
+	"#ecbe7b",
+	"#3071db",
+	"#a9a1e1",
+	"#46d9ff",
+	"#dfdfdf",
 
 	[255] = 0,
 
